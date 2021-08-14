@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  font-size: 14px;
+  background-image: url('bg-desktop.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+  color: white;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+#container {
+  width: 60vw;
+  margin: 0 auto;
+}
+.progress-bar {
+  background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.card {
+  position: relative;
+  bottom: 50px;
+  background-color: hsl(228, 56%, 26%);
+  width:35%;
+  margin-right: 20px;
+  border-radius: 12px 120px 12px 12px;
+}
+.progress {
+  background-color: hsl(229, 57%, 11%);
+}
+#right-card {
+  position: relative;
+  bottom: 36px;
+  background-color: hsl(228, 56%, 26%);
+  width: 60%;
+  border-radius: 12px;
+}
+.card-body {
+  padding: 40px 40px;
+}
+#logo {
+  margin-bottom: 40px;
+}
+.icon-bkg {
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  width: 20%;
+  padding:  10px 0;
+  border-radius: 12px;
+}
+.icon-bkg img {
+  width: 25px;
+  height: 25px;
+}
+.btn {
+  position: relative;
+  bottom: 130px;
+  left: 270px;
+  border-radius: 7px 7px 0 7px;
+}
+
+#gb {
+  position: relative;
+  bottom: 20px;
+}
+@media (min-width:1500px) and (max-width:1750px) {
+  .btn:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 128px;
+    top: 63px;
+    border: 17px solid;
+    border-color: white white transparent transparent;
+  }
+}
+@media (min-width:1800px) and (max-width:2000px) {
+  .btn {
+    left:420px;
+  }
+  .btn:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 128px;
+    top: 63px;
+    border: 17px solid;
+    border-color: white white transparent transparent;
+  }
+}
+@media (min-width:2000px) and (max-width:2600px) {
+  .btn {
+    left: 630px;
+  }
+  .btn:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 123px;
+    top: 63px;
+    border: 17px solid;
+    border-color: white white transparent transparent;
+  }
+}
+@media (min-width:1001px) and (max-width:1449px) {
+  .btn {
+    left: 80px;
+  }
+  .card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 123px;
+    top: 63px;
+    border: 17px solid;
+    border-color: white white transparent transparent;
+  }
+
+}
+@media (max-width:400px) {
+  body {
+    background-image: url('bg-mobile.png');
+    background-size: 100%;
+    margin: 0 auto;
+
+  }
+  #container {
+    margin: 0 auto;
+    width: 95vw;
+
+  }
+  .card {
+    display:block;
+    width: 100%;
+  }
+  #right-card {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .btn {
+    top: 50px;
+    left: 35px;
+    padding: 20px 30px;
+  }
+}
+@media (min-width:401px) and (max-width:1000px) {
+  body {
+    background-image: url('bg-mobile.png');
+    background-size: 100%;
+    margin: 0 auto;
+
+  }
+  #container {
+    margin: 0 auto;
+    width: 95vw;
+
+  }
+  .card {
+    display:block;
+    width: 100%;
+  }
+  #right-card {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .btn {
+    top: 50px;
+    left: 200px;
+    padding: 20px 50px;
+  }
+}
